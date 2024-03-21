@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/core-img/favicon.ico">
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.top_header {
+            width: 100%;
+            height: 40px;
+            background-color: #f4f4f4;
+           position: sticky;
+        }
+
+        .top_1 {
+            height: 40px;
+            width: 50%;
+            /* background-color: aqua; */
+            float: left;
+            /* position: relative; */
+
+        }
+
+        .top_2 {
+            height: 40px;
+            width: 50%;
+            /* background-color: red; */
+            float: left;
+            text-align: right;
+            /* position: relative; */
+        }
+
+        .top_1 a {
+            display: inline-block;
+            font-size: 15px;
+            color: #707070;
+            text-decoration: none;
+            position: relative;
+            left: 100px;
+        }
+
+        .top_1 a i {
+            color: aliceblue;
+            margin-left: 100px;
+            margin-top: 12px;
+            color: steelblue;
+        }
+
+        .top_2 a {
+            display: inline-block;
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+            position: relative;
+            right: 150px;
+        }
+
+
+        .top_2 a i {
+            display: inline-block;
+            margin-right: 20px;
+            margin-top: 12px;
+
+        }
+
+
+header{
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.sub-header {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    
+}
+
+.header-img {
+    margin: 30px 180px;
+   
+
+}
+
+.header-list {
+    list-style: none;
+    
+    margin-top: 42px;
+    margin-left: ;
+}
+
+.header-list>li {
+    margin-right: 30px;
+    float: left;
+}
+
+.header-list>li> a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+
+.header-list>li>a:hover {
+    color: rgb(0, 174, 239);
+}
+
+.header-button button {
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 40px;
+    padding: 10px 30px;
+    background-color: rgb(0, 174, 239);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.header-button button:hover {
+    background-color: white;
+    color: rgb(0, 174, 239);
+    border: 2px solid rgb(0, 174, 239);
+}
+
+.drop-btn{
+    position: relative;
+    display: inline-block;
+
+}
+
+.drop-btn:hover .drop-down{
+    display: block;
+}
+.drop-down{
+    position: absolute;
+    top: 15px;
+    width: 150px;
+    background-color: white;
+    display: none;
+    z-index: 1;
+}
+
+.drop-down a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    display: block;
+
+}
+.drop-down a:hover{
+    color: #00aeef;
+}
+.img-bg-1{
+    background-image: url("./images/ABOUT-BG.webp");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+.img-bg-1A{
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+.img-bg-1A h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.home-about{
+    margin-top: 50px;
+    margin-left: 100px;
+    color: rgb(51,67,117);
+}
+.home-about a{
+    text-decoration: none;
+    color: rgb(51,67,117);
+}
+.home-about a:hover{
+    color: rgb(0, 174, 239);
+}
+.home-about i:hover{
+    color: rgb(0, 174, 239);
+}
+.row-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-1 {
+    margin-top: 50px;
+}
+
+.about-para-progress h1 {
+    font-size: 36px;
+
+}
+
+.about-para-progress .line {
+    width: 70px;
+    height: 4px;
+    background-color: #00aeef;
+    margin-top: 20px;
+}
+
+.about-para-progress p {
+    line-height: 1.9;
+    color: #707070;
+    margin: 30px 0px;
+
+}
+
+
+
+.progress-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #00aeef;
+}
+
+.font-awesome-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+#react-1 {
+    font-size: 50px;
+    color: rgb(0, 174, 239);
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.back {
+    background-image: url(./images/bg-2.jpg);
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.back-2 {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+    display: flex;
+}
+
+.img-3 h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.img-3 .line-5 {
+    width: 70px;
+    height: 4px;
+    background-color: #00aeef;
+    margin-top: 20px;
+    margin-left: 700px;
+}
+
+
+
+.img-3 img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    height: 350px;
+    position: relative;
+  
+}
+.first-1{
+    height: 70px;
+    width: 350px;
+    bottom: 70px;
+    position: relative;
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.8;
+}
+.first-1 h5{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.first-1 p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    
+}
+.bg-color-1{
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+    width: 300px;
+    
+}
+.bg-color-1 h5{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+}
+.bg-color-1 p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.bg-5{
+    background-image: url(./images/bg-4.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+.bg-6{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+.img-para-1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+.img-para-1 img{
+    border-radius: 50%;
+}
+.img-para-1 h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    font-style: italic;
+    color: #ffffff;
+}
+footer{
+    margin-top: 100px;
+}
+footer .bg-7{
+    background-image: url(../img/bg-7.jpg);
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+footer .bg-7A{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    background: linear-gradient(to right, #2c455d, #00012c);
+    opacity: 0.85;
+}
+footer .footer-main{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 100px;
+}
+footer .footer-first p{
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+footer .footer-secound p{
+    line-height:3;
+    
+}
+footer .footer-third p{
+    line-height:3;
+    
+}
+footer .footer-third p:hover{
+    color: #00aeef;
+    
+}
+footer .footer-fourth p{
+    line-height: 1.6;
+    margin-top: 15px;
+}
+footer #email-1{
+    height: 42px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+}
+.demo{
+    background-color: skyblue;
+    height: 37px;
+    width: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 40px;
+    left: 184px;
+
+}
+.demo i{
+    margin: 10px;
+}
+.demo:hover{
+    background-color: black;
+}
+.icon-5{
+   font-size: 25px;
+   margin-top: -30px;
+}
+.hr-line{
+    width: 95%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.copy-right-section{
+    text-align: center;
+    margin-top: 30px;
+    color: gray;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="top_header">
+
+        <div class="top_1">
+            <a href="#"><i class="fa fa-map-marker">
+
+                </i><span style="margin-left: 10px;">28 Jackson Street, Chicago, 7788569 USA</span></a>
+
+            <a href="#"><i class="fa fa-envelope">
+
+                </i><span style="margin-left: 10px;">info.dento@gmail.com</span></a>
+
+        </div>
+
+        <div class="top_2">
+
+            <a href=""><i class="fa fa-facebook"></i></a>
+
+            <a href=""><i class="fa fa-twitter"></i></a>
+
+            <a href=""><i class="fa fa-google-plus"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-pinterest"></i></a>
+
+
+        </div>
+</div>
+
+   
+    
+    
+<header>
+    <div class="main-head">
+        <div class="sub-header">
+            <div class="header-img">
+                <img src="./images/logo.png.webp" alt="logo img">
+            </div>
+            <div class="header-list">
+                <li><a href="./Home_page.html">HOME</a></li>
+                <li class="drop-btn">
+                    <a href="../HTML/HOME_PAGE.HTML">PAGES <i class="fa-solid fa fa-caret-down"></i></a>
+                    <div class="drop-down">
+
+                        <a href="./Home_page.html">- Home</a>
+                        <a href="./About_us.html">- ABOUT</a>
+                        <a href="../HTML/SERVICE_PAGE.HTML">- SERVICE</a>
+                        <a href="../HTML/PRICING_PAGE.HTML">- PRICING</a>
+                        <a href="../HTML/BLOG_PAGE.HTML">- BLOG</a>
+                        <a href="../HTML/CONTACT_PAGE.HTML">- CONTACT</a>
+                    </div>
+                   
+                </li>
+                <li><a href="./About_us.html">ABOUT</a></li>
+                <li><a href="../HTML/SERVICE_PAGE.HTML">SERVICE</a></li>
+                <li><a href="../HTML/PRICING_PAGE.HTML">PRICING</a></li>
+                <li class="drop-btn">
+                    <a href="#">BLOG <i class="fa-solid fa fa-caret-down"></i></a>
+                    <div class="drop-down">
+
+                        <a href="../HTML/BLOG_PAGE.HTML">- Blog</a>
+                        <a href="../HTML/BLOG_DETAILS.HTML">- Blog Details</a>
+                        
+                    </div>
+                </li>
+                <li><a href="../HTML/CONTACT_PAGE.HTML">CONTACT</a></li>
+            </div>
+            <div class="header-button">
+                <button>BOOKING NOW</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="img-bg-1">
+        <div class="img-bg-1A">
+           <h1>ABOUT US</h1>
+        </div>
+    </div>
+</section>
+
+<div class="home-about">
+    <p><i class=" fa fa-house"></i> <a href="../HTML/HOME_PAGE.HTML"> Home</a>  <span style="color: rgb(121,114,154);">>  About Us</span></p>
+</div>
+
+
+<section>
+    <div class="row-2">
+        <div>
+            <img src="./images/doct-ners.jpg" alt="img" height="500px" class="img-1">
+        </div>
+        <div class="about-para-progress">
+            <h1>About Us</h1>
+            <div class="line"></div>
+            <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis <br> zurna, nec finibusmi
+                velit advertisis. Proin vitae odin quis magna aliquet <br> laciniae. Etiam auctor, nisi vel.
+                Pellentesque ultrices nisl quam iaculis, nec <br> pulvinar augue.</p>
+            <div class="progress-content">
+                <div class="progress-list">
+                    <div>
+                        <h3>Experience Dentist</h3>
+                    </div>
+                    <div>
+                        <h3>80%</h3>
+                    </div>
+                </div>
+                <progress class="progress-bar" value="80" max="100">
+                </progress>
+
+                <div class="progress-list">
+                    <div>
+                        <h3>Modern Equipment</h3>
+                    </div>
+                    <div>
+                        <h3>65%</h3>
+                    </div>
+                </div>
+                <progress class="progress-bar" value="65" max="100">
+                </progress>
+
+                <div class="progress-list">
+                    <div>
+                        <h3>Friendly Staff</h3>
+                    </div>
+                    <div>
+                        <h3>85%</h3>
+                    </div>
+                </div>
+                <progress class="progress-bar" value="85" max="100">
+                </progress>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr style="width: 80%;font-size: 20px; margin: auto; margin-top: 50px;  ">
+
+<div class="font-awesome-1">
+    <div>
+        <i class="fa-brands fa-react fa fa-envelope" id="react-1"></i>
+        <h1 style="margin-left: 55px; margin-bottom: 10px; font-size: 38px">20</h1>
+        <h3>Years Of Experience</h3>
+    </div>
+
+    <div>
+        <i class="fa-sharp fa fa-heart" id="react-1"></i>
+        <h1 style="margin-left: 45px; margin-bottom: 10px; font-size: 38px">700+</h1>
+        <h3 style="margin-left: 25px;">Happy Patients</h3>
+    </div>
+
+    <div>
+        <i class="fa-regular fa fa-shake" id="react-1"></i>
+        <h1 style="margin-left: 45px; margin-bottom: 10px; font-size: 38px">120</h1>
+        <h3 style="margin-left: 25px;">Certificate</h3>
+    </div>
+    <div>
+        <i class="fa-sharp fa-solid fa fa-envelope" id="react-1"></i>
+        <h1 style="margin-left: 55px; margin-bottom: 10px; font-size: 38px">40+</h1>
+        <h3 style="margin-left: 55px;">Dentist</h3>
+    </div>
+</div>
+
+<div class="bg-5">
+    <div class="bg-6">
+        <div class="img-para-1">
+            <div><img src="./images/man-img.webp" alt="" height="200px" class="img-4"></div>
+            <div>
+                <h4>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the
+                    working <br> day beforehand. I also had a call confirming appointment. I have been a patient
+                    ever since. My <br> dentist is very reassuring and
+                    very helpful. Excellent treatment and advice.”</h4>
+                <h4>Arron Ramsey</h4>
+                <h4>Dental Patient</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="img-3">
+
+    <h1>Our Dentist</h1>
+    <div class="line-5"></div>
+    <div style="display: flex; justify-content: space-evenly; margin-top: 50px;">
+
+        <div>
+            <img src="./images/img-1.png" alt="" height="300px">
+            <div class="first-1">
+                <h5>Michael Barley</h5>
+                <p>Implant Expert</p>
+            </div>
+        </div>
+        <div>
+            <img src="./images/img-2.png" alt="" height="300px">
+            <div class="first-1">
+                <h5>Michael Barley</h5>
+                <p>Implant Expert</p>
+            </div>
+        </div>
+        <div>
+            <img src="./images/img-3.png" alt="" height="300px">
+            <div class="first-1">
+                <h5>Michael Barley</h5>
+                <p>Implant Expert</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<footer>
+    <div class="bg-7">
+        <div class="bg-7A">
+            <div class="footer-main">
+                <div class="footer-first">
+                    <img src="../img/logo.png.webp" alt="">
+                    <p>Etiam sutor risus, dapibus act elefend katen, <br>lacinia sitamet denim. Mauris sagittis
+                        kansa <br> interdum dignissim.</p>
+                    <p><i class="fa-solid fa fa-map-marker" style="color: #075ef2;"></i>&nbsp; &nbsp;28 Jackson
+                        Street, Chicago,
+                        7788569 USA</p>
+                    <p><i class="fa-solid fa fa-phone" style="color: #1567f4;"></i>&nbsp; +84. 2252. 2250. 122</p>
+                    <p><i class="fa-solid fa fa-envelope" style="color: #145fe1;"></i>&nbsp; &nbsp;
+                        info.dento@gmail.com</p>
+                </div>
+
+                <div class="footer-secound">
+                    <h2>Opening Hours</h2>
+                    <div style="display: flex; margin-top: 10px;">
+                        <div>
+                            <p>Mon-Wed</p>
+                            <p>Thu-Fri</p>
+                            <p>Sat</p>
+                            <p>Sun</p>
+                            <p>Holiday</p>
+                        </div>
+                        <div style="margin-left: 100px; text-align: right;">
+                            <p>8.00-18.00</p>
+                            <p>8.00-17.00</p>
+                            <p>9.00-17.00</p>
+                            <p>10.00-17.00</p>
+                            <p>Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-third">
+                    <h2>Quick Link</h2>
+                    <div style="display: flex; margin-top: 10px;">
+                        <div>
+                            <p>About</p>
+                            <p>Contact</p>
+                            <p>News</p>
+                            <p>Careers</p>
+                            <p>Services</p>
+                        </div>
+                        <div style="margin-left: 50px">
+                            <p>FAQs</p>
+                            <p>Policy</p>
+                            <p>Advisors</p>
+                            <p>Dentist</p>
+                            <p>Legals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-fourth">
+                    <h2>Newsletter</h2>
+                    <p>We will send out weekly newest <br>article and some great offers</p>
+                    <form action="" class="footer-form">
+                        <input type="email" name="" id="email-1" placeholder="Email Address">
+                        <div class="demo">
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </div>
+                    </form>
+                    <div class="icon-5">
+                        <i class="fa-brands fa fa-facebook" style="color: white;"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa fa-twitter" style="color: white;"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa fa-google-plus" style="color: white;"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa fa-linkedin" style="color: white;"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa fa-pinterest" style="color: white;"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="copy-right-section">
+                <p>Copyright ©2023 All rights reserved | This template is made with <i
+                        class="fa-regular fa fa-heart"></i> by <span style="color: white;">Colorlib</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
